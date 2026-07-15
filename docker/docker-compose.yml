@@ -1,0 +1,59 @@
+services:
+  cine:
+    image: mysql:8.4
+    container_name: cine
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: cine_db
+      MYSQL_USER: victor
+      MYSQL_PASSWORD: victor123
+    ports:
+      - "3307:3306"
+    volumes:
+      - ../../data/cine_data:/var/lib/mysql
+      - ./cine-init:/docker-entrypoint-initdb.d:ro
+
+  gestion:
+    image: postgres:16
+    container_name: gestion
+    environment:
+      POSTGRES_DB: cine_db
+      POSTGRES_USER: victor
+      POSTGRES_PASSWORD: victor123
+    ports:
+      - "5432:5432"
+    volumes:
+      - ../../data/gestion_data:/var/lib/postgresql/data
+      - ./gestion-init:/docker-entrypoint-initdb.d:ro
+
+  staging:
+    image: postgres:16
+    container_name: staging
+    environment:
+        POSTGRES_DB: datawarehouse
+        POSTGRES_USER: victor
+        POSTGRES_PASSWORD: victor123
+    ports:
+      - "5450:5432"
+    volumes:
+      - ../../data/datawarehouse_data:/var/lib/postgresql/data
+      - ./datawarehouse-init:/docker-entrypoint-initdb.d:ro
+
+  mailpit:
+    image: axllent/mailpit
+    container_name: mailpit
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    restart: unless-stopped
+
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    restart: always
+    ports:
+      - "8090:8080"
+    depends_on:
+      - gestion
+      - cine
+      - staging
