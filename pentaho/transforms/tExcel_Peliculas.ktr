@@ -174,7 +174,7 @@
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>H:/progs/BI/CineHub/excel/programacion_funciones.xlsx</name>
+      <name>${Internal.Transformation.Filename.Directory}/../../excel/programacion_funciones.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -460,9 +460,9 @@
       <meta>
         <name>costo_base</name>
         <rename>costo_base</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
@@ -477,9 +477,9 @@
       <meta>
         <name>tarifa_referencia</name>
         <rename>tarifa_referencia</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>

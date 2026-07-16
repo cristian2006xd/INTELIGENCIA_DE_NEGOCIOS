@@ -21,7 +21,7 @@ services:
       POSTGRES_USER: victor
       POSTGRES_PASSWORD: victor123
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - ../../data/gestion_data:/var/lib/postgresql/data
       - ./gestion-init:/docker-entrypoint-initdb.d:ro

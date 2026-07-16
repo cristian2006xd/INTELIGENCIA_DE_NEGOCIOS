@@ -9,7 +9,7 @@
   <created_user>-</created_user>
   <created_date>2026/07/15 09:00:00.000</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2026/07/15 09:00:00.000</modified_date>
+  <modified_date>2026/07/16 08:00:00.000</modified_date>
   <parameters>
   </parameters>
   <slaveservers>
@@ -41,16 +41,17 @@
       <type>SPECIAL</type>
       <specialtype>START</specialtype>
       <xloc>80</xloc>
-      <yloc>80</yloc>
+      <yloc>240</yloc>
       <draw>Y</draw>
       <parallel>N</parallel>
     </entry>
+
     <entry>
       <name>tCine_Salas</name>
       <description/>
       <type>TRANS</type>
       <specialtype>TRANS</specialtype>
-      <filename>H:/progs/BI/CineHub/pentaho/transforms/tExcel_Stage_Salas.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tExcel_Stage_Salas.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -71,7 +72,7 @@
       <description/>
       <type>TRANS</type>
       <specialtype>TRANS</specialtype>
-      <filename>H:/progs/BI/CineHub/pentaho/transforms/tExcel_Stage_Distribuidoras.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tExcel_Stage_Distribuidoras.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -92,7 +93,7 @@
       <description/>
       <type>TRANS</type>
       <specialtype>TRANS</specialtype>
-      <filename>H:/progs/BI/CineHub/pentaho/transforms/tExcel_Peliculas.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tExcel_Peliculas.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -113,7 +114,7 @@
       <description/>
       <type>TRANS</type>
       <specialtype>TRANS</specialtype>
-      <filename>H:/progs/BI/CineHub/pentaho/transforms/tExcel_Programacion.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tExcel_Programacion.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -129,12 +130,288 @@
       <draw>Y</draw>
       <parallel>N</parallel>
     </entry>
+
+    <entry>
+      <name>tMySQL_Estudio</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_Estudio.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>240</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tMySQL_Genero</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_Genero.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>400</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tMySQL_Pelicula</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_Pelicula.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>560</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tMySQL_Cliente</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_Cliente.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>720</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tMySQL_Reserva</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_Reserva.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>880</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tMySQL_DetalleReserva</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_DetalleReserva.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>1040</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tMySQL_Disponibilidad</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_Disponibilidad.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>1200</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+
+    <entry>
+      <name>tPG_Zona</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tPG_Zona.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>240</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tPG_Sucursal</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tPG_Sucursal.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>400</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tPG_SegmentoCliente</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tPG_SegmentoCliente.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>560</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tPG_Cliente</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tPG_Cliente.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>720</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tPG_MetaMensual</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tPG_MetaMensual.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>880</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+    <entry>
+      <name>tPG_EncuestaSatisfaccion</name>
+      <description/>
+      <type>TRANS</type>
+      <specialtype>TRANS</specialtype>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tPG_EncuestaSatisfaccion.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <xloc>1040</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      <parallel>N</parallel>
+    </entry>
+
     <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
-      <xloc>880</xloc>
-      <yloc>80</yloc>
+      <xloc>1360</xloc>
+      <yloc>240</yloc>
       <draw>Y</draw>
       <parallel>N</parallel>
     </entry>
@@ -147,6 +424,21 @@
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
+    <hop>
+      <from>Start</from>
+      <to>tMySQL_Estudio</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Start</from>
+      <to>tPG_Zona</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+
     <hop>
       <from>tCine_Salas</from>
       <to>tCine_Distribuidoras</to>
@@ -170,6 +462,99 @@
     </hop>
     <hop>
       <from>tCine_Programacion</from>
+      <to>Success</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+
+    <hop>
+      <from>tMySQL_Estudio</from>
+      <to>tMySQL_Genero</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tMySQL_Genero</from>
+      <to>tMySQL_Pelicula</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tMySQL_Pelicula</from>
+      <to>tMySQL_Cliente</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tMySQL_Cliente</from>
+      <to>tMySQL_Reserva</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tMySQL_Reserva</from>
+      <to>tMySQL_DetalleReserva</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tMySQL_DetalleReserva</from>
+      <to>tMySQL_Disponibilidad</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tMySQL_Disponibilidad</from>
+      <to>Success</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+
+    <hop>
+      <from>tPG_Zona</from>
+      <to>tPG_Sucursal</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tPG_Sucursal</from>
+      <to>tPG_SegmentoCliente</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tPG_SegmentoCliente</from>
+      <to>tPG_Cliente</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tPG_Cliente</from>
+      <to>tPG_MetaMensual</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tPG_MetaMensual</from>
+      <to>tPG_EncuestaSatisfaccion</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tPG_EncuestaSatisfaccion</from>
       <to>Success</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>

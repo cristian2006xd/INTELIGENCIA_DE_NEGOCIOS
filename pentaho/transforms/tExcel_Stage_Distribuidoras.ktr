@@ -164,7 +164,7 @@
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>H:/progs/BI/CineHub/excel/programacion_funciones.xlsx</name>
+      <name>${Internal.Transformation.Filename.Directory}/../../excel/programacion_funciones.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
