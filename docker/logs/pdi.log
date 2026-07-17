@@ -1,0 +1,331 @@
+2026-07-17 09:45:24.465 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Dispatching started for transformation [PG_Encuesta_Valida]
+2026-07-17 09:45:24.577 INFO  <init of Stage_Encuesta_Valida.0 (Thread-16)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 09:45:24.578 INFO  <init of Rechazo_Regex.0 (Thread-11)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 09:45:24.578 INFO  <init of Rechazo_Sucursal.0 (Thread-17)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 09:45:25.408 ERROR <init of Lookup_Sucursal.0 (Thread-14)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  An error cause this step to stop: org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+2026-07-17 09:45:25.409 ERROR <init of Lookup_Sucursal.0 (Thread-14)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Error initializing step [Lookup_Sucursal]
+2026-07-17 09:45:25.411 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Step [Lookup_Sucursal.0] failed to initialize!
+2026-07-17 09:45:25.412 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 09:46:53.239 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Dispatching started for transformation [PG_Encuesta_Valida]
+2026-07-17 09:46:53.345 INFO  <init of Rechazo_Sucursal.0 (Thread-17)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 09:46:53.345 INFO  <init of Rechazo_Regex.0 (Thread-11)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 09:46:53.345 INFO  <init of Stage_Encuesta_Valida.0 (Thread-16)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 09:46:54.236 ERROR <init of Lookup_Sucursal.0 (Thread-14)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  An error cause this step to stop: org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+2026-07-17 09:46:54.237 ERROR <init of Lookup_Sucursal.0 (Thread-14)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Error initializing step [Lookup_Sucursal]
+2026-07-17 09:46:54.239 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Step [Lookup_Sucursal.0] failed to initialize!
+2026-07-17 09:46:54.240 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:00:13.782 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Dispatching started for transformation [PG_Encuesta_Valida]
+2026-07-17 10:00:13.868 INFO  <init of Rechazo_Sucursal.0 (Thread-18)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:00:13.868 INFO  <init of Stage_Encuesta_Valida.0 (Thread-17)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:00:13.868 INFO  <init of Rechazo_Regex.0 (Thread-11)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:00:14.896 ERROR <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Unexpected error
+2026-07-17 10:00:14.899 ERROR <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Unexpected error
+2026-07-17 10:00:14.901 ERROR <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:469)
+	at org.pentaho.di.core.database.Database.connect(Database.java:395)
+	at org.pentaho.di.core.database.Database.connect(Database.java:367)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.connectToDatabase(BaseDatabaseStep.java:133)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.beforeStartProcessing(BaseDatabaseStep.java:108)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:618)
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:454)
+	... 6 more
+Caused by: org.postgresql.util.PSQLException: FATAL: la autentificaci�n password fall� para el usuario �victor�
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:253)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:615)
+	... 7 more
+
+2026-07-17 10:00:14.901 ERROR <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:469)
+	at org.pentaho.di.core.database.Database.connect(Database.java:395)
+	at org.pentaho.di.core.database.Database.connect(Database.java:367)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.connectToDatabase(BaseDatabaseStep.java:133)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.beforeStartProcessing(BaseDatabaseStep.java:108)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:618)
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:454)
+	... 6 more
+Caused by: org.postgresql.util.PSQLException: FATAL: la autentificaci�n password fall� para el usuario �victor�
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:253)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:615)
+	... 7 more
+
+2026-07-17 10:00:14.908 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:00:14.908 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:00:14.909 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026-07-17 10:00:14.910 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026-07-17 10:00:14.910 WARN  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation detected one or more steps with errors.
+2026-07-17 10:00:14.910 WARN  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation is killing the other steps!
+2026-07-17 10:00:15.141 WARN  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation detected one or more steps with errors.
+2026-07-17 10:00:15.142 WARN  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation is killing the other steps!
+2026-07-17 10:01:23.212 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Dispatching started for transformation [PG_Encuesta_Valida]
+2026-07-17 10:01:23.310 INFO  <init of Rechazo_Regex.0 (Thread-11)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:01:23.310 INFO  <init of Rechazo_Sucursal.0 (Thread-18)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:01:23.311 INFO  <init of Stage_Encuesta_Valida.0 (Thread-17)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:01:24.327 ERROR <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Unexpected error
+2026-07-17 10:01:24.327 ERROR <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Unexpected error
+2026-07-17 10:01:24.329 ERROR <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:469)
+	at org.pentaho.di.core.database.Database.connect(Database.java:395)
+	at org.pentaho.di.core.database.Database.connect(Database.java:367)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.connectToDatabase(BaseDatabaseStep.java:133)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.beforeStartProcessing(BaseDatabaseStep.java:108)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:618)
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:454)
+	... 6 more
+Caused by: org.postgresql.util.PSQLException: FATAL: la autentificaci�n password fall� para el usuario �victor�
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:253)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:615)
+	... 7 more
+
+2026-07-17 10:01:24.330 ERROR <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:469)
+	at org.pentaho.di.core.database.Database.connect(Database.java:395)
+	at org.pentaho.di.core.database.Database.connect(Database.java:367)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.connectToDatabase(BaseDatabaseStep.java:133)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.beforeStartProcessing(BaseDatabaseStep.java:108)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:618)
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:454)
+	... 6 more
+Caused by: org.postgresql.util.PSQLException: FATAL: la autentificaci�n password fall� para el usuario �victor�
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:253)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:615)
+	... 7 more
+
+2026-07-17 10:01:24.338 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:01:24.338 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:01:24.339 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026-07-17 10:01:24.339 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026-07-17 10:01:24.339 WARN  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation detected one or more steps with errors.
+2026-07-17 10:01:24.340 WARN  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation is killing the other steps!
+2026-07-17 10:01:24.574 WARN  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation detected one or more steps with errors.
+2026-07-17 10:01:24.574 WARN  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation is killing the other steps!
+2026-07-17 10:01:53.356 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Dispatching started for transformation [PG_Encuesta_Valida]
+2026-07-17 10:01:53.435 INFO  <init of Rechazo_Sucursal.0 (Thread-18)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:01:53.435 INFO  <init of Stage_Encuesta_Valida.0 (Thread-17)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:01:53.435 INFO  <init of Rechazo_Regex.0 (Thread-11)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:01:54.398 ERROR <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Unexpected error
+2026-07-17 10:01:54.399 ERROR <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Unexpected error
+2026-07-17 10:01:54.401 ERROR <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:469)
+	at org.pentaho.di.core.database.Database.connect(Database.java:395)
+	at org.pentaho.di.core.database.Database.connect(Database.java:367)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.connectToDatabase(BaseDatabaseStep.java:133)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.beforeStartProcessing(BaseDatabaseStep.java:108)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:618)
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:454)
+	... 6 more
+Caused by: org.postgresql.util.PSQLException: FATAL: la autentificaci�n password fall� para el usuario �victor�
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:253)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:160)
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:615)
+	... 7 more
+
+2026-07-17 10:01:54.403 ERROR <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error occurred while trying to connect to the database
+
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:469)
+	at org.pentaho.di.core.database.Database.connect(Database.java:395)
+	at org.pentaho.di.core.database.Database.connect(Database.java:367)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.connectToDatabase(BaseDatabaseStep.java:133)
+	at org.pentaho.di.trans.step.BaseDatabaseStep.beforeStartProcessing(BaseDatabaseStep.java:108)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: org.pentaho.di.core.exception.KettleDatabaseException: 
+Connection failed. Verify all connection parameters and confirm that the appropriate driver is installed.
+FATAL: la autentificaci�n password fall� para el usuario �victor�
+
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:618)
+	at org.pentaho.di.core.database.Database.normalConnect(Database.java:454)
+	... 6 more
+Caused by: org.postgresql.util.PSQLException: FATAL: la autentificaci�n password fall� para el usuario �victor�
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:253)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:160)
+	at org.pentaho.di.core.database.Database.connectUsingClass(Database.java:615)
+	... 7 more
+
+2026-07-17 10:01:54.410 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:01:54.410 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:01:54.411 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026-07-17 10:01:54.413 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026-07-17 10:01:54.413 WARN  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation detected one or more steps with errors.
+2026-07-17 10:01:54.413 WARN  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation is killing the other steps!
+2026-07-17 10:01:54.640 WARN  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation detected one or more steps with errors.
+2026-07-17 10:01:54.641 WARN  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Transformation is killing the other steps!
+2026-07-17 10:03:42.728 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Dispatching started for transformation [PG_Encuesta_Valida]
+2026-07-17 10:03:42.815 INFO  <init of Stage_Encuesta_Valida.0 (Thread-17)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:03:42.815 INFO  <init of Rechazo_Regex.0 (Thread-11)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:03:42.816 INFO  <init of Rechazo_Sucursal.0 (Thread-18)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:03:44.589 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:03:44.601 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2026-07-17 10:03:44.715 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished reading query, closing connection
+2026-07-17 10:03:44.720 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=1460, O=0, R=0, W=1460, U=0, E=0)
+2026-07-17 10:03:44.721 INFO  <PG_Encuesta_Valida - Filtro_Doc> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2026-07-17 10:03:44.724 INFO  <PG_Encuesta_Valida - Filtro_Puntuacion> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2026-07-17 10:03:44.728 INFO  <PG_Encuesta_Valida - Buffer_Validos> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:03:44.733 INFO  <PG_Encuesta_Valida - Homologar_Satisfaccion> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:03:44.773 INFO  <PG_Encuesta_Valida - Lookup_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=1461, W=1457, U=0, E=0)
+2026-07-17 10:03:44.776 INFO  <PG_Encuesta_Valida - Rechazo_Regex> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2026-07-17 10:03:44.780 INFO  <PG_Encuesta_Valida - Filtro_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=0, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:03:45.035 INFO  <PG_Encuesta_Valida - Stage_Encuesta_Valida> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tPG_Encuesta_Valida.ktr]  Finished processing (I=0, O=1457, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:04:20.002 WARN  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Start of job execution
+2026-07-17 10:04:20.016 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Starting entry [ETL_Reserva_MySQL]
+2026-07-17 10:04:20.276 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Dispatching started for transformation [MySQL_Reserva_Valida]
+2026-07-17 10:04:20.344 INFO  <init of Rechazo_Cliente.0 (Thread-21)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:04:20.344 INFO  <init of Rechazo_Regex.0 (Thread-14)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:04:20.344 INFO  <init of Stage_Reserva_Valida.0 (Thread-20)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:04:22.398 INFO  <MySQL_Reserva_Valida - Leer_Reserva> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished reading query, closing connection
+2026-07-17 10:04:22.404 INFO  <MySQL_Reserva_Valida - Filtro_Estado> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=4102, W=4102, U=0, E=0)
+2026-07-17 10:04:22.411 INFO  <MySQL_Reserva_Valida - Descartadas_Canceladas> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=78, W=78, U=0, E=0)
+2026-07-17 10:04:22.413 INFO  <MySQL_Reserva_Valida - Filtro_Doc> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=4024, W=4024, U=0, E=0)
+2026-07-17 10:04:22.419 INFO  <MySQL_Reserva_Valida - Filtro_Num> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=3820, W=3820, U=0, E=0)
+2026-07-17 10:04:22.431 INFO  <MySQL_Reserva_Valida - Buffer_Validos> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=3820, W=3820, U=0, E=0)
+2026-07-17 10:04:22.434 INFO  <MySQL_Reserva_Valida - Homologar_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=3820, W=3820, U=0, E=0)
+2026-07-17 10:04:22.439 INFO  <MySQL_Reserva_Valida - Homologar_Canal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=3820, W=3820, U=0, E=0)
+2026-07-17 10:04:22.445 INFO  <MySQL_Reserva_Valida - Leer_Reserva> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=4102, O=0, R=0, W=4102, U=0, E=0)
+2026-07-17 10:04:23.300 INFO  <MySQL_Reserva_Valida - Rechazo_Regex> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=204, R=204, W=204, U=0, E=0)
+2026-07-17 10:04:35.702 INFO  <MySQL_Reserva_Valida - Filtro_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=3820, W=3820, U=0, E=0)
+2026-07-17 10:04:35.707 INFO  <MySQL_Reserva_Valida - Lookup_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=3820, O=0, R=3820, W=3820, U=0, E=0)
+2026-07-17 10:04:35.745 INFO  <MySQL_Reserva_Valida - Stage_Reserva_Valida> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=3820, R=3820, W=3820, U=0, E=0)
+2026-07-17 10:04:35.748 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Starting entry [ETL_Encuesta_PostgreSQL]
+2026-07-17 10:04:35.788 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Dispatching started for transformation [PG_Encuesta_Valida]
+2026-07-17 10:04:35.798 INFO  <init of Rechazo_Regex.0 (Thread-39)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:04:35.799 INFO  <init of Rechazo_Sucursal.0 (Thread-46)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:04:35.800 INFO  <init of Stage_Encuesta_Valida.0 (Thread-45)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Connected to database [Stage] (commit=1000)
+2026-07-17 10:04:36.016 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished reading query, closing connection
+2026-07-17 10:04:36.022 INFO  <PG_Encuesta_Valida - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2026-07-17 10:04:36.095 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished reading query, closing connection
+2026-07-17 10:04:36.100 INFO  <PG_Encuesta_Valida - Leer_Encuesta> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=1460, O=0, R=0, W=1460, U=0, E=0)
+2026-07-17 10:04:36.102 INFO  <PG_Encuesta_Valida - Filtro_Doc> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2026-07-17 10:04:36.106 INFO  <PG_Encuesta_Valida - Filtro_Puntuacion> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=1460, W=1460, U=0, E=0)
+2026-07-17 10:04:36.110 INFO  <PG_Encuesta_Valida - Buffer_Validos> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:04:36.113 INFO  <PG_Encuesta_Valida - Homologar_Satisfaccion> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:04:36.146 INFO  <PG_Encuesta_Valida - Rechazo_Regex> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2026-07-17 10:04:36.205 INFO  <PG_Encuesta_Valida - Lookup_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=1461, W=1457, U=0, E=0)
+2026-07-17 10:04:36.208 INFO  <PG_Encuesta_Valida - Filtro_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=0, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:04:36.409 INFO  <PG_Encuesta_Valida - Stage_Encuesta_Valida> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished processing (I=0, O=1457, R=1457, W=1457, U=0, E=0)
+2026-07-17 10:04:36.412 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Starting entry [Success]
+2026-07-17 10:04:36.415 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished job entry [Success] (result=[true])
+2026-07-17 10:04:36.416 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished job entry [ETL_Encuesta_PostgreSQL] (result=[true])
+2026-07-17 10:04:36.417 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Finished job entry [ETL_Reserva_MySQL] (result=[true])
+2026-07-17 10:04:36.418 WARN  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jETL_Homologacion_Staging.kjb]  Job execution finished
