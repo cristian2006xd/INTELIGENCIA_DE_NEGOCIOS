@@ -1,3 +1,5 @@
+name: cinehub
+
 services:
   cine:
     image: mysql:8.4
@@ -57,3 +59,22 @@ services:
       - gestion
       - cine
       - staging
+
+  rstudio:
+    build:
+      context: ./rstudio
+    container_name: cinehub_rstudio
+    environment:
+      PASSWORD: rstudio123
+      DW_HOST: staging
+      DW_PORT: 5432
+      DW_DATABASE: datawarehouse
+      DW_USER: victor
+      DW_PASSWORD: victor123
+    ports:
+      - "8788:8787"
+    volumes:
+      - ./rstudio/proyecto:/home/rstudio/proyecto
+    depends_on:
+      - staging
+    restart: unless-stopped

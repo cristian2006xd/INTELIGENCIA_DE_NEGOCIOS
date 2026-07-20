@@ -1230,7 +1230,7 @@
       <meta>
         <name>funciones_programadas</name>
         <rename>funciones_programadas</rename>
-        <type>String</type>
+        <type>Number</type>
         <length>-2</length>
         <precision>-2</precision>
         <conversion_mask/>
