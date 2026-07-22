@@ -1,0 +1,22 @@
+2026-07-20 07:41:12.086 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Dispatching started for transformation [tExcel_Programacion]
+2026-07-20 07:41:12.187 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Can't run transformation due to plugin missing
+2026-07-20 07:41:12.188 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Error initializing step [Programacion_Funciones]
+2026-07-20 07:41:12.203 INFO  <init of Staging_Programacion.0 (Thread-12)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-20 07:41:12.203 INFO  <init of Audit_Rechazo.0 (Thread-15)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-20 07:41:13.910 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Step [Programacion_Funciones.0] failed to initialize!
+2026-07-20 08:05:37.548 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Dispatching started for transformation [tExcel_Programacion]
+2026-07-20 08:05:37.641 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Can't run transformation due to plugin missing
+2026-07-20 08:05:37.642 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Error initializing step [Programacion_Funciones]
+2026-07-20 08:05:37.657 INFO  <init of Staging_Programacion.0 (Thread-12)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-20 08:05:37.691 INFO  <init of Audit_Rechazo.0 (Thread-15)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-20 08:05:38.705 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Step [Programacion_Funciones.0] failed to initialize!
+2026-07-20 08:20:10.755 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Dispatching started for transformation [tExcel_Stage_Salas]
+2026-07-20 08:20:10.823 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Can't run transformation due to plugin missing
+2026-07-20 08:20:10.824 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Error initializing step [Programacion_Salas]
+2026-07-20 08:20:10.835 INFO  <init of Stage_Salas.0 (Thread-10)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-20 08:20:10.836 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Step [Programacion_Salas.0] failed to initialize!
+2026-07-20 08:21:08.795 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Dispatching started for transformation [tExcel_Stage_Salas]
+2026-07-20 08:21:08.864 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Can't run transformation due to plugin missing
+2026-07-20 08:21:08.864 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Error initializing step [Programacion_Salas]
+2026-07-20 08:21:08.878 INFO  <init of Stage_Salas.0 (Thread-10)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Connected to database [Stage] (commit=1000)
+2026-07-20 08:21:08.879 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Step [Programacion_Salas.0] failed to initialize!

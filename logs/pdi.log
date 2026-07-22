@@ -1,22 +1,162 @@
-2026-07-20 07:41:12.086 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Dispatching started for transformation [tExcel_Programacion]
-2026-07-20 07:41:12.187 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Can't run transformation due to plugin missing
-2026-07-20 07:41:12.188 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Error initializing step [Programacion_Funciones]
-2026-07-20 07:41:12.203 INFO  <init of Staging_Programacion.0 (Thread-12)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
-2026-07-20 07:41:12.203 INFO  <init of Audit_Rechazo.0 (Thread-15)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
-2026-07-20 07:41:13.910 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Step [Programacion_Funciones.0] failed to initialize!
-2026-07-20 08:05:37.548 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Dispatching started for transformation [tExcel_Programacion]
-2026-07-20 08:05:37.641 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Can't run transformation due to plugin missing
-2026-07-20 08:05:37.642 ERROR <init of Programacion_Funciones.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Error initializing step [Programacion_Funciones]
-2026-07-20 08:05:37.657 INFO  <init of Staging_Programacion.0 (Thread-12)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
-2026-07-20 08:05:37.691 INFO  <init of Audit_Rechazo.0 (Thread-15)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Connected to database [Stage] (commit=1000)
-2026-07-20 08:05:38.705 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Programacion.ktr]  Step [Programacion_Funciones.0] failed to initialize!
-2026-07-20 08:20:10.755 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Dispatching started for transformation [tExcel_Stage_Salas]
-2026-07-20 08:20:10.823 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Can't run transformation due to plugin missing
-2026-07-20 08:20:10.824 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Error initializing step [Programacion_Salas]
-2026-07-20 08:20:10.835 INFO  <init of Stage_Salas.0 (Thread-10)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Connected to database [Stage] (commit=1000)
-2026-07-20 08:20:10.836 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Step [Programacion_Salas.0] failed to initialize!
-2026-07-20 08:21:08.795 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Dispatching started for transformation [tExcel_Stage_Salas]
-2026-07-20 08:21:08.864 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Can't run transformation due to plugin missing
-2026-07-20 08:21:08.864 ERROR <init of Programacion_Salas.0 (Thread-8)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Error initializing step [Programacion_Salas]
-2026-07-20 08:21:08.878 INFO  <init of Stage_Salas.0 (Thread-10)> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Connected to database [Stage] (commit=1000)
-2026-07-20 08:21:08.879 ERROR <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tExcel_Stage_Salas.ktr]  Step [Programacion_Salas.0] failed to initialize!
+2026-07-22 07:30:04.332 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Tiempo.ktr]  Dispatching started for transformation [tDW_Tiempo]
+2026-07-22 07:30:06.189 INFO  <tDW_Tiempo - Calendario> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Tiempo.ktr]  Finished reading query, closing connection
+2026-07-22 07:30:06.205 INFO  <tDW_Tiempo - Calendario> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Tiempo.ktr]  Finished processing (I=730, O=0, R=0, W=730, U=0, E=0)
+2026-07-22 07:30:09.491 INFO  <tDW_Tiempo - Cargar_Dim_Tiempo> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Tiempo.ktr]  Finished processing (I=730, O=730, R=730, W=730, U=0, E=0)
+2026-07-22 07:30:46.186 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Dispatching started for transformation [tDW_Pelicula]
+2026-07-22 07:30:47.675 INFO  <tDW_Pelicula - Leer_Peliculas> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Finished reading query, closing connection
+2026-07-22 07:30:47.704 INFO  <tDW_Pelicula - Leer_Peliculas> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026-07-22 07:30:47.770 ERROR <tDW_Pelicula - Cargar_Dim_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Error in step, asking everyone to stop because of:
+2026-07-22 07:30:47.773 ERROR <tDW_Pelicula - Cargar_Dim_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+ERROR: null value in column "codigo_pelicula" of relation "dim_pelicula" violates not-null constraint
+  Detail: Failing row contains (1, null, Avatar: El Camino del Agua, G01, Accion, EST01, Walt Disney Pictures, 2D, ATP, 2.50, 5.50, 2026-07-22 07:30:47.706358).
+
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1335)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1261)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1249)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1237)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.lookupValues(InsertUpdate.java:103)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:292)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "codigo_pelicula" of relation "dim_pelicula" violates not-null constraint
+  Detail: Failing row contains (1, null, Avatar: El Camino del Agua, G01, Accion, EST01, Walt Disney Pictures, 2D, ATP, 2.50, 5.50, 2026-07-22 07:30:47.706358).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1304)
+	... 7 more
+
+2026-07-22 07:30:47.777 INFO  <tDW_Pelicula - Cargar_Dim_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Finished processing (I=1, O=0, R=1, W=0, U=0, E=1)
+2026-07-22 07:30:47.780 WARN  <tDW_Pelicula - Cargar_Dim_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Transformation detected one or more steps with errors.
+2026-07-22 07:30:47.782 WARN  <tDW_Pelicula - Cargar_Dim_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Transformation is killing the other steps!
+2026-07-22 07:30:50.870 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Dispatching started for transformation [tDW_Cliente]
+2026-07-22 07:30:52.760 INFO  <tDW_Cliente - Leer_Clientes> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Finished reading query, closing connection
+2026-07-22 07:30:52.772 INFO  <tDW_Cliente - Leer_Clientes> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026-07-22 07:30:52.874 ERROR <tDW_Cliente - Cargar_Dim_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Error in step, asking everyone to stop because of:
+2026-07-22 07:30:52.878 ERROR <tDW_Cliente - Cargar_Dim_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+ERROR: null value in column "documento" of relation "dim_cliente" violates not-null constraint
+  Detail: Failing row contains (1, null, Valeria, Torres, null, V, N, 2026-07-22 07:30:52.78814).
+
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1335)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1261)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1249)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1237)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.lookupValues(InsertUpdate.java:103)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:292)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "documento" of relation "dim_cliente" violates not-null constraint
+  Detail: Failing row contains (1, null, Valeria, Torres, null, V, N, 2026-07-22 07:30:52.78814).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1304)
+	... 7 more
+
+2026-07-22 07:30:52.887 INFO  <tDW_Cliente - Cargar_Dim_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Finished processing (I=1, O=0, R=1, W=0, U=0, E=1)
+2026-07-22 07:30:52.890 WARN  <tDW_Cliente - Cargar_Dim_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Transformation detected one or more steps with errors.
+2026-07-22 07:30:52.890 WARN  <tDW_Cliente - Cargar_Dim_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Transformation is killing the other steps!
+2026-07-22 07:30:55.916 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Dispatching started for transformation [tDW_Sucursal]
+2026-07-22 07:30:57.912 INFO  <tDW_Sucursal - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Finished reading query, closing connection
+2026-07-22 07:30:57.932 INFO  <tDW_Sucursal - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2026-07-22 07:30:58.019 ERROR <tDW_Sucursal - Cargar_Dim_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Error in step, asking everyone to stop because of:
+2026-07-22 07:30:58.021 ERROR <tDW_Sucursal - Cargar_Dim_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  org.pentaho.di.core.exception.KettleDatabaseException: 
+Error inserting/updating row
+ERROR: null value in column "codigo_sucursal" of relation "dim_sucursal" violates not-null constraint
+  Detail: Failing row contains (1, null, Cine Norte, Zona Norte, Quito, Av. 10 de Agosto N45-20, 2026-07-22 07:30:57.93902).
+
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1335)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1261)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1249)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1237)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.lookupValues(InsertUpdate.java:103)
+	at org.pentaho.di.trans.steps.insertupdate.InsertUpdate.processRow(InsertUpdate.java:292)
+	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "codigo_sucursal" of relation "dim_sucursal" violates not-null constraint
+  Detail: Failing row contains (1, null, Cine Norte, Zona Norte, Quito, Av. 10 de Agosto N45-20, 2026-07-22 07:30:57.93902).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at org.pentaho.di.core.database.Database.insertRow(Database.java:1304)
+	... 7 more
+
+2026-07-22 07:30:58.025 INFO  <tDW_Sucursal - Cargar_Dim_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Finished processing (I=1, O=0, R=1, W=0, U=0, E=1)
+2026-07-22 07:30:58.030 WARN  <tDW_Sucursal - Cargar_Dim_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Transformation detected one or more steps with errors.
+2026-07-22 07:30:58.031 WARN  <tDW_Sucursal - Cargar_Dim_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Transformation is killing the other steps!
+2026-07-22 07:31:58.378 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Dispatching started for transformation [tDW_Pelicula]
+2026-07-22 07:31:59.810 INFO  <tDW_Pelicula - Leer_Peliculas> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Finished reading query, closing connection
+2026-07-22 07:31:59.822 INFO  <tDW_Pelicula - Leer_Peliculas> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026-07-22 07:32:00.552 INFO  <tDW_Pelicula - Cargar_Dim_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Pelicula.ktr]  Finished processing (I=100, O=100, R=100, W=100, U=0, E=0)
+2026-07-22 07:32:03.300 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Dispatching started for transformation [tDW_Cliente]
+2026-07-22 07:32:04.863 INFO  <tDW_Cliente - Leer_Clientes> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Finished reading query, closing connection
+2026-07-22 07:32:04.877 INFO  <tDW_Cliente - Leer_Clientes> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026-07-22 07:32:05.615 INFO  <tDW_Cliente - Cargar_Dim_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Cliente.ktr]  Finished processing (I=100, O=100, R=100, W=100, U=0, E=0)
+2026-07-22 07:32:08.809 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Dispatching started for transformation [tDW_Sucursal]
+2026-07-22 07:32:09.995 INFO  <tDW_Sucursal - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Finished reading query, closing connection
+2026-07-22 07:32:10.003 INFO  <tDW_Sucursal - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2026-07-22 07:32:10.149 INFO  <tDW_Sucursal - Cargar_Dim_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Sucursal.ktr]  Finished processing (I=4, O=4, R=4, W=4, U=0, E=0)
+2026-07-22 07:32:43.997 INFO  <main> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Dispatching started for transformation [tDW_Fact_Reserva]
+2026-07-22 07:32:46.693 INFO  <tDW_Fact_Reserva - Leer_Reserva_Detalle> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished reading query, closing connection
+2026-07-22 07:32:46.709 INFO  <tDW_Fact_Reserva - Leer_Reserva_Detalle> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=12071, O=0, R=0, W=12071, U=0, E=0)
+2026-07-22 07:32:50.831 INFO  <tDW_Fact_Reserva - Homologar_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=0, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:33:09.405 INFO  <tDW_Fact_Reserva - Lookup_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=12071, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:33:09.572 INFO  <tDW_Fact_Reserva - Lookup_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=12071, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:33:09.742 INFO  <tDW_Fact_Reserva - Lookup_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=11459, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:33:09.788 INFO  <tDW_Fact_Reserva - Lookup_Canal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=3, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:33:09.819 INFO  <tDW_Fact_Reserva - Lookup_Estado> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=2, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:33:38.200 INFO  <tDW_Fact_Reserva - Cargar_Fact_Reserva> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\transforms\tDW_Fact_Reserva.ktr]  Finished processing (I=12071, O=12071, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:22.279 WARN  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Start of job execution
+2026-07-22 07:34:22.299 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Starting entry [Dim_Tiempo]
+2026-07-22 07:34:22.590 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Dispatching started for transformation [tDW_Tiempo]
+2026-07-22 07:34:23.924 INFO  <tDW_Tiempo - Calendario> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished reading query, closing connection
+2026-07-22 07:34:23.948 INFO  <tDW_Tiempo - Calendario> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=730, O=0, R=0, W=730, U=0, E=0)
+2026-07-22 07:34:25.808 INFO  <tDW_Tiempo - Cargar_Dim_Tiempo> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=730, O=0, R=730, W=730, U=0, E=0)
+2026-07-22 07:34:25.812 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Starting entry [Dim_Pelicula]
+2026-07-22 07:34:25.846 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Dispatching started for transformation [tDW_Pelicula]
+2026-07-22 07:34:26.017 INFO  <tDW_Pelicula - Leer_Peliculas> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished reading query, closing connection
+2026-07-22 07:34:26.022 INFO  <tDW_Pelicula - Leer_Peliculas> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026-07-22 07:34:26.301 INFO  <tDW_Pelicula - Cargar_Dim_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=100, O=0, R=100, W=100, U=0, E=0)
+2026-07-22 07:34:26.303 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Starting entry [Dim_Cliente]
+2026-07-22 07:34:26.337 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Dispatching started for transformation [tDW_Cliente]
+2026-07-22 07:34:27.626 INFO  <tDW_Cliente - Leer_Clientes> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished reading query, closing connection
+2026-07-22 07:34:27.634 INFO  <tDW_Cliente - Leer_Clientes> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026-07-22 07:34:27.812 INFO  <tDW_Cliente - Cargar_Dim_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=100, O=0, R=100, W=100, U=0, E=0)
+2026-07-22 07:34:27.815 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Starting entry [Dim_Sucursal]
+2026-07-22 07:34:27.842 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Dispatching started for transformation [tDW_Sucursal]
+2026-07-22 07:34:27.984 INFO  <tDW_Sucursal - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished reading query, closing connection
+2026-07-22 07:34:27.988 INFO  <tDW_Sucursal - Leer_Sucursales> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2026-07-22 07:34:28.050 INFO  <tDW_Sucursal - Cargar_Dim_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=4, O=0, R=4, W=4, U=0, E=0)
+2026-07-22 07:34:28.052 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Starting entry [Fact_Reserva]
+2026-07-22 07:34:28.092 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Dispatching started for transformation [tDW_Fact_Reserva]
+2026-07-22 07:34:28.557 INFO  <tDW_Fact_Reserva - Leer_Reserva_Detalle> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished reading query, closing connection
+2026-07-22 07:34:28.563 INFO  <tDW_Fact_Reserva - Leer_Reserva_Detalle> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=12071, O=0, R=0, W=12071, U=0, E=0)
+2026-07-22 07:34:32.368 INFO  <tDW_Fact_Reserva - Homologar_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=0, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:50.941 INFO  <tDW_Fact_Reserva - Lookup_Sucursal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=12071, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:51.133 INFO  <tDW_Fact_Reserva - Lookup_Pelicula> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=12071, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:51.330 INFO  <tDW_Fact_Reserva - Lookup_Cliente> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=11459, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:51.361 INFO  <tDW_Fact_Reserva - Lookup_Canal> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=3, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:51.409 INFO  <tDW_Fact_Reserva - Lookup_Estado> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=2, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:52.235 INFO  <tDW_Fact_Reserva - Cargar_Fact_Reserva> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished processing (I=12071, O=0, R=12071, W=12071, U=0, E=0)
+2026-07-22 07:34:52.249 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Starting entry [Success]
+2026-07-22 07:34:52.253 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished job entry [Success] (result=[true])
+2026-07-22 07:34:52.255 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished job entry [Fact_Reserva] (result=[true])
+2026-07-22 07:34:52.257 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished job entry [Dim_Sucursal] (result=[true])
+2026-07-22 07:34:52.258 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished job entry [Dim_Cliente] (result=[true])
+2026-07-22 07:34:52.259 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished job entry [Dim_Pelicula] (result=[true])
+2026-07-22 07:34:52.259 INFO  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Finished job entry [Dim_Tiempo] (result=[true])
+2026-07-22 07:34:52.260 WARN  <Thread-6> [C:\Users\ItsqmetEstudiantes\Desktop\CineHub\pentaho\jobs\jDW_Cubo_Reserva.kjb]  Job execution finished
