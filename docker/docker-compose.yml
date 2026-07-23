@@ -78,3 +78,14 @@ services:
     depends_on:
       - staging
     restart: unless-stopped
+
+  python:
+    build: ./python
+    container_name: python
+    volumes:
+      - ./python:/app
+      - ./python/resultados:/app/resultados
+    working_dir: /app
+    depends_on:
+      - staging
+    command: sleep infinity
