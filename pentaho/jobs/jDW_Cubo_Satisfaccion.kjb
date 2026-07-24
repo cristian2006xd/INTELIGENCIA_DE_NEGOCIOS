@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <job>
-  <name>jDW_Cubo_Reserva</name>
-  <description>Carga el cubo (dimensiones + hechos) de reservas en el esquema dw.</description>
+  <name>jDW_Cubo_Satisfaccion</name>
+  <description>Carga el cubo (dimensiones + hechos) de satisfaccion del cliente en el esquema dw.</description>
   <extended_description/>
   <job_version/>
   <job_status>0</job_status>
   <directory>/</directory>
   <created_user>-</created_user>
-  <created_date>2026/07/22 08:00:00.000</created_date>
+  <created_date>2026/07/24 08:00:00.000</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2026/07/22 08:00:00.000</modified_date>
+  <modified_date>2026/07/24 08:00:00.000</modified_date>
   <parameters>
   </parameters>
   <slaveservers>
@@ -67,11 +67,11 @@
       <parallel>N</parallel>
     </entry>
     <entry>
-      <name>Dim_Pelicula</name>
+      <name>Dim_Sucursal</name>
       <description/>
       <type>TRANS</type>
       <specialtype>TRANS</specialtype>
-      <filename>${Internal.Job.Filename.Directory}/../transforms/tDW_Pelicula.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tDW_Sucursal.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -109,11 +109,11 @@
       <parallel>N</parallel>
     </entry>
     <entry>
-      <name>Dim_Sucursal</name>
+      <name>ETL_Encuesta_Valida</name>
       <description/>
       <type>TRANS</type>
       <specialtype>TRANS</specialtype>
-      <filename>${Internal.Job.Filename.Directory}/../transforms/tDW_Sucursal.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tPG_Encuesta_Valida.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -130,11 +130,11 @@
       <parallel>N</parallel>
     </entry>
     <entry>
-      <name>ETL_Reserva_MySQL</name>
-      <description>Homologa codigo_sucursal (y demas campos) en stg.mysql_reserva_valida antes de cargar el hecho.</description>
+      <name>Fact_Satisfaccion</name>
+      <description/>
       <type>TRANS</type>
       <specialtype>TRANS</specialtype>
-      <filename>${Internal.Job.Filename.Directory}/../transforms/tMySQL_Reserva_Valida.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}/../transforms/tDW_Fact_Satisfaccion.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
@@ -151,31 +151,10 @@
       <parallel>N</parallel>
     </entry>
     <entry>
-      <name>Fact_Reserva</name>
-      <description/>
-      <type>TRANS</type>
-      <specialtype>TRANS</specialtype>
-      <filename>${Internal.Job.Filename.Directory}/../transforms/tDW_Fact_Reserva.ktr</filename>
-      <transname/>
-      <arg_from_previous>N</arg_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <xloc>1040</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-      <parallel>N</parallel>
-    </entry>
-    <entry>
       <name>Success</name>
       <description/>
       <type>SUCCESS</type>
-      <xloc>1200</xloc>
+      <xloc>1040</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
       <parallel>N</parallel>
@@ -191,20 +170,6 @@
     </hop>
     <hop>
       <from>Dim_Tiempo</from>
-      <to>Dim_Pelicula</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Dim_Pelicula</from>
-      <to>Dim_Cliente</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Dim_Cliente</from>
       <to>Dim_Sucursal</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
@@ -212,20 +177,27 @@
     </hop>
     <hop>
       <from>Dim_Sucursal</from>
-      <to>ETL_Reserva_MySQL</to>
+      <to>Dim_Cliente</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>ETL_Reserva_MySQL</from>
-      <to>Fact_Reserva</to>
+      <from>Dim_Cliente</from>
+      <to>ETL_Encuesta_Valida</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Fact_Reserva</from>
+      <from>ETL_Encuesta_Valida</from>
+      <to>Fact_Satisfaccion</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Fact_Satisfaccion</from>
       <to>Success</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>

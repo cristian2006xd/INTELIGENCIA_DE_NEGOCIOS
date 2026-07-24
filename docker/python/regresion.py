@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 
 # 1. Conexión a PostgreSQL
 conexion = create_engine(
-    "postgresql+psycopg://victor:victor123@staging:5432/datawarehouse"
+    "postgresql+psycopg://cris:cristian123@staging:5432/datawarehouse"
 )
 
 

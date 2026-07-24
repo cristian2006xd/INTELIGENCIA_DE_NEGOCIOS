@@ -3,12 +3,12 @@ name: cinehub
 services:
   cine:
     image: mysql:8.4
-    container_name: cine
+    container_name: cinehub_cine
     environment:
       MYSQL_ROOT_PASSWORD: root123
       MYSQL_DATABASE: cine_db
-      MYSQL_USER: victor
-      MYSQL_PASSWORD: victor123
+      MYSQL_USER: cris
+      MYSQL_PASSWORD: cristian123
     ports:
       - "3308:3306"
     volumes:
@@ -17,11 +17,11 @@ services:
 
   gestion:
     image: postgres:16
-    container_name: gestion
+    container_name: cinehub_gestion
     environment:
       POSTGRES_DB: cine_db
-      POSTGRES_USER: victor
-      POSTGRES_PASSWORD: victor123
+      POSTGRES_USER: cris
+      POSTGRES_PASSWORD: cristian123
     ports:
       - "5434:5432"
     volumes:
@@ -30,11 +30,11 @@ services:
 
   staging:
     image: postgres:16
-    container_name: staging
+    container_name: cinehub_staging
     environment:
         POSTGRES_DB: datawarehouse
-        POSTGRES_USER: victor
-        POSTGRES_PASSWORD: victor123
+        POSTGRES_USER: cris
+        POSTGRES_PASSWORD: cristian123
     ports:
       - "5450:5432"
     volumes:
@@ -43,7 +43,7 @@ services:
 
   mailpit:
     image: axllent/mailpit
-    container_name: mailpit
+    container_name: cinehub_mailpit
     ports:
       - "1025:1025"
       - "8025:8025"
@@ -51,7 +51,7 @@ services:
 
   adminer:
     image: adminer:latest
-    container_name: adminer
+    container_name: cinehub_adminer
     restart: always
     ports:
       - "8090:8080"
@@ -69,8 +69,8 @@ services:
       DW_HOST: staging
       DW_PORT: 5432
       DW_DATABASE: datawarehouse
-      DW_USER: victor
-      DW_PASSWORD: victor123
+      DW_USER: cris
+      DW_PASSWORD: cristian123
     ports:
       - "8788:8787"
     volumes:
@@ -81,7 +81,7 @@ services:
 
   python:
     build: ./python
-    container_name: python
+    container_name: cinehub_python
     volumes:
       - ./python:/app
       - ./python/resultados:/app/resultados

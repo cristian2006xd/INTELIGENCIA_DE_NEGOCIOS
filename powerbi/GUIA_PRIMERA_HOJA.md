@@ -17,8 +17,8 @@ Desktop:
 ```text
 Servidor:     localhost:5450
 Base de datos: datawarehouse
-Usuario:      victor
-Contraseña:   victor123
+Usuario:      cris
+Contraseña:   cristian123
 Modo:         Importar
 ```
 

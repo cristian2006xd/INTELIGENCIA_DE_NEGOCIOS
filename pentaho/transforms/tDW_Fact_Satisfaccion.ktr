@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>tDW_Fact_Reserva</name>
-    <description>Carga la tabla de hechos de reservas resolviendo las llaves subrogadas de cada dimension.</description>
+    <name>tDW_Fact_Satisfaccion</name>
+    <description>Carga dw.fact_satisfaccion desde stg.pg_encuesta_valida, resolviendo claves sustitutas de fecha, sucursal, cliente y categoria de satisfaccion.</description>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
@@ -46,28 +46,24 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2026/07/22 08:00:00.000</created_date>
+    <created_date>2026/07/24 08:00:00.000</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2026/07/22 08:00:00.000</modified_date>
+    <modified_date>2026/07/24 08:00:00.000</modified_date>
     <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <order>
-    <hop><from>Leer_Reserva_Detalle</from><to>Lookup_Codigo_Sucursal</to><enabled>Y</enabled></hop>
-    <hop><from>Lookup_Codigo_Sucursal</from><to>Filtro_Reserva_Valida</to><enabled>Y</enabled></hop>
-    <hop><from>Filtro_Reserva_Valida</from><to>Lookup_Sucursal</to><enabled>Y</enabled></hop>
-    <hop><from>Filtro_Reserva_Valida</from><to>Descartadas_Sin_Homologar</to><enabled>Y</enabled></hop>
-    <hop><from>Lookup_Sucursal</from><to>Lookup_Pelicula</to><enabled>Y</enabled></hop>
-    <hop><from>Lookup_Pelicula</from><to>Lookup_Cliente</to><enabled>Y</enabled></hop>
-    <hop><from>Lookup_Cliente</from><to>Lookup_Canal</to><enabled>Y</enabled></hop>
-    <hop><from>Lookup_Canal</from><to>Lookup_Estado</to><enabled>Y</enabled></hop>
-    <hop><from>Lookup_Estado</from><to>Cargar_Fact_Reserva</to><enabled>Y</enabled></hop>
+    <hop><from>Leer_Encuesta_Valida</from><to>Lookup_Tiempo</to><enabled>Y</enabled></hop>
+    <hop><from>Lookup_Tiempo</from><to>Lookup_Sucursal</to><enabled>Y</enabled></hop>
+    <hop><from>Lookup_Sucursal</from><to>Lookup_Cliente</to><enabled>Y</enabled></hop>
+    <hop><from>Lookup_Cliente</from><to>Lookup_Categoria_Satisfaccion</to><enabled>Y</enabled></hop>
+    <hop><from>Lookup_Categoria_Satisfaccion</from><to>Cargar_Fact_Satisfaccion</to><enabled>Y</enabled></hop>
   </order>
 
   <step>
-    <name>Leer_Reserva_Detalle</name>
+    <name>Leer_Encuesta_Valida</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -77,21 +73,17 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Cine_MySQL</connection>
+    <connection>Stage</connection>
     <sql>SELECT
-  r.numero_reserva,
-  d.linea,
-  CAST(DATE_FORMAT(r.fecha_hora, '%Y%m%d') AS UNSIGNED) AS fecha_reserva_key,
-  d.codigo_pelicula,
-  r.documento_cliente,
-  TRIM(UPPER(r.canal_reserva)) AS canal_norm,
-  r.estado,
-  d.tipo_asiento,
-  d.cantidad_asientos,
-  r.descuento
-FROM reserva r
-JOIN detalle_reserva d ON d.numero_reserva = r.numero_reserva
-WHERE r.estado = 'CONFIRMADA'</sql>
+  id_encuesta_origen,
+  fecha,
+  codigo_sucursal,
+  documento_cliente,
+  COALESCE(categoria_satisfaccion, 'SIN_CLASIFICAR') AS categoria_satisfaccion,
+  puntuacion,
+  tiempo_espera_minutos,
+  comentario
+FROM stg.pg_encuesta_valida</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -113,9 +105,9 @@ WHERE r.estado = 'CONFIRMADA'</sql>
   </step>
 
   <step>
-    <name>Lookup_Codigo_Sucursal</name>
+    <name>Lookup_Tiempo</name>
     <type>DBLookup</type>
-    <description>La homologacion del codigo_sucursal ya se resuelve en el staging (tMySQL_Reserva_Valida), aqui solo se recupera el valor ya homologado por numero_reserva.</description>
+    <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
     <copies>1</copies>
@@ -128,22 +120,22 @@ WHERE r.estado = 'CONFIRMADA'</sql>
     <cache_load_all>N</cache_load_all>
     <cache_size>0</cache_size>
     <lookup>
-      <schema>stg</schema>
-      <table>mysql_reserva_valida</table>
+      <schema>dw</schema>
+      <table>dim_tiempo</table>
       <orderby/>
       <fail_on_multiple>N</fail_on_multiple>
       <eat_row_on_failure>N</eat_row_on_failure>
       <key>
-        <name>numero_reserva</name>
-        <field>numero_reserva</field>
+        <name>fecha</name>
+        <field>fecha</field>
         <condition>=</condition>
         <name2/>
       </key>
       <value>
-        <name>codigo_sucursal</name>
-        <rename>codigo_sucursal</rename>
+        <name>fecha_key</name>
+        <rename>fecha_encuesta_key</rename>
         <default/>
-        <type>String</type>
+        <type>Integer</type>
       </value>
     </lookup>
     <attributes/>
@@ -162,56 +154,6 @@ WHERE r.estado = 'CONFIRMADA'</sql>
   </step>
 
   <step>
-    <name>Filtro_Reserva_Valida</name>
-    <type>FilterRows</type>
-    <description>Descarta reservas que no llegaron a stg.mysql_reserva_valida (ya rechazadas por tMySQL_Reserva_Valida, p.ej. documento_cliente invalido). Evita que fallen aqui por sucursal_key nulo.</description>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Lookup_Sucursal</send_true_to>
-    <send_false_to>Descartadas_Sin_Homologar</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <conditions>
-        </conditions>
-        <leftvalue>codigo_sucursal</leftvalue>
-        <function>IS NOT NULL</function>
-        <rightvalue2/>
-      </condition>
-    </compare>
-    <attributes/>
-    <GUI>
-      <xloc>320</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-
-  <step>
-    <name>Descartadas_Sin_Homologar</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-    <GUI>
-      <xloc>320</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-
-  <step>
     <name>Lookup_Sucursal</name>
     <type>DBLookup</type>
     <description/>
@@ -223,8 +165,8 @@ WHERE r.estado = 'CONFIRMADA'</sql>
       <schema_name/>
     </partitioning>
     <connection>Stage</connection>
-    <cache>N</cache>
-    <cache_load_all>N</cache_load_all>
+    <cache>Y</cache>
+    <cache_load_all>Y</cache_load_all>
     <cache_size>0</cache_size>
     <lookup>
       <schema>dw</schema>
@@ -255,55 +197,6 @@ WHERE r.estado = 'CONFIRMADA'</sql>
     </remotesteps>
     <GUI>
       <xloc>400</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-
-  <step>
-    <name>Lookup_Pelicula</name>
-    <type>DBLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>Stage</connection>
-    <cache>N</cache>
-    <cache_load_all>N</cache_load_all>
-    <cache_size>0</cache_size>
-    <lookup>
-      <schema>dw</schema>
-      <table>dim_pelicula</table>
-      <orderby/>
-      <fail_on_multiple>N</fail_on_multiple>
-      <eat_row_on_failure>N</eat_row_on_failure>
-      <key>
-        <name>codigo_pelicula</name>
-        <field>codigo_pelicula</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>pelicula_key</name>
-        <rename>pelicula_key</rename>
-        <default/>
-        <type>Integer</type>
-      </value>
-    </lookup>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>560</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
@@ -352,6 +245,55 @@ WHERE r.estado = 'CONFIRMADA'</sql>
       </output>
     </remotesteps>
     <GUI>
+      <xloc>560</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+
+  <step>
+    <name>Lookup_Categoria_Satisfaccion</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>Stage</connection>
+    <cache>Y</cache>
+    <cache_load_all>Y</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>dw</schema>
+      <table>dim_categoria_satisfaccion</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>categoria_satisfaccion</name>
+        <field>categoria_satisfaccion</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>categoria_satisfaccion_key</name>
+        <rename>categoria_satisfaccion_key</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
       <xloc>720</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
@@ -359,105 +301,7 @@ WHERE r.estado = 'CONFIRMADA'</sql>
   </step>
 
   <step>
-    <name>Lookup_Canal</name>
-    <type>DBLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>Stage</connection>
-    <cache>Y</cache>
-    <cache_load_all>Y</cache_load_all>
-    <cache_size>0</cache_size>
-    <lookup>
-      <schema>dw</schema>
-      <table>dim_canal</table>
-      <orderby/>
-      <fail_on_multiple>N</fail_on_multiple>
-      <eat_row_on_failure>N</eat_row_on_failure>
-      <key>
-        <name>canal_norm</name>
-        <field>codigo_canal</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>canal_key</name>
-        <rename>canal_key</rename>
-        <default/>
-        <type>Integer</type>
-      </value>
-    </lookup>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>880</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-
-  <step>
-    <name>Lookup_Estado</name>
-    <type>DBLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>Stage</connection>
-    <cache>Y</cache>
-    <cache_load_all>Y</cache_load_all>
-    <cache_size>0</cache_size>
-    <lookup>
-      <schema>dw</schema>
-      <table>dim_estado_reserva</table>
-      <orderby/>
-      <fail_on_multiple>N</fail_on_multiple>
-      <eat_row_on_failure>N</eat_row_on_failure>
-      <key>
-        <name>estado</name>
-        <field>estado_reserva</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>estado_reserva_key</name>
-        <rename>estado_reserva_key</rename>
-        <default/>
-        <type>Integer</type>
-      </value>
-    </lookup>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1040</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-
-  <step>
-    <name>Cargar_Fact_Reserva</name>
+    <name>Cargar_Fact_Satisfaccion</name>
     <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>
@@ -472,32 +316,16 @@ WHERE r.estado = 'CONFIRMADA'</sql>
     <update_bypassed>N</update_bypassed>
     <lookup>
       <schema>dw</schema>
-      <table>fact_reserva</table>
+      <table>fact_satisfaccion</table>
       <key>
-        <name>numero_reserva</name>
-        <field>numero_reserva</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>linea</name>
-        <field>linea</field>
+        <name>id_encuesta_origen</name>
+        <field>id_encuesta_origen</field>
         <condition>=</condition>
         <name2/>
       </key>
       <value>
-        <name>fecha_reserva_key</name>
-        <rename>fecha_reserva_key</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>pelicula_key</name>
-        <rename>pelicula_key</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>cliente_key</name>
-        <rename>cliente_key</rename>
+        <name>fecha_encuesta_key</name>
+        <rename>fecha_encuesta_key</rename>
         <update>Y</update>
       </value>
       <value>
@@ -506,38 +334,33 @@ WHERE r.estado = 'CONFIRMADA'</sql>
         <update>Y</update>
       </value>
       <value>
-        <name>canal_key</name>
-        <rename>canal_key</rename>
+        <name>cliente_key</name>
+        <rename>cliente_key</rename>
         <update>Y</update>
       </value>
       <value>
-        <name>estado_reserva_key</name>
-        <rename>estado_reserva_key</rename>
+        <name>categoria_satisfaccion_key</name>
+        <rename>categoria_satisfaccion_key</rename>
         <update>Y</update>
       </value>
       <value>
-        <name>tipo_asiento</name>
-        <rename>tipo_asiento</rename>
+        <name>puntuacion</name>
+        <rename>puntuacion</rename>
         <update>Y</update>
       </value>
       <value>
-        <name>cantidad_asientos</name>
-        <rename>cantidad_asientos</rename>
+        <name>tiempo_espera_minutos</name>
+        <rename>tiempo_espera_minutos</rename>
         <update>Y</update>
       </value>
       <value>
-        <name>descuento</name>
-        <rename>descuento</rename>
+        <name>comentario</name>
+        <rename>comentario</rename>
         <update>Y</update>
       </value>
       <value>
-        <name>numero_reserva</name>
-        <rename>numero_reserva</rename>
-        <update>N</update>
-      </value>
-      <value>
-        <name>linea</name>
-        <rename>linea</rename>
+        <name>id_encuesta_origen</name>
+        <rename>id_encuesta_origen</rename>
         <update>N</update>
       </value>
     </lookup>
@@ -550,7 +373,7 @@ WHERE r.estado = 'CONFIRMADA'</sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
+      <xloc>880</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
     </GUI>
