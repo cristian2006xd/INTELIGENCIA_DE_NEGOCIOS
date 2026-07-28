@@ -25,7 +25,11 @@ CREATE TABLE IF NOT EXISTS dw.dim_tiempo (
     CONSTRAINT ck_dim_tiempo_dia_semana CHECK (numero_dia_semana BETWEEN 1 AND 7)
 );
 
-/* Vista auxiliar para generar el calendario (2025-2026) */
+/* Vista auxiliar para generar el calendario (2025-2029).
+   El rango llega hasta 2029 porque fact_programacion.fecha_fin_exhibicion
+   (ver 08_cubo_programacion.sql) trae fechas de fin de exhibicion de hasta
+   2028-12-02 en programacion_funciones.xlsx; un calendario solo 2025-2026
+   dejaria esa llave nula para la mayoria de las filas. */
 CREATE OR REPLACE VIEW dw.view_aux_tiempo AS
 SELECT
     (TO_CHAR(d, 'YYYYMMDD'))::INTEGER AS fecha_key,
@@ -50,7 +54,7 @@ SELECT
         WHEN 7 THEN 'Domingo'
     END)::VARCHAR(15) AS nombre_dia,
     (EXTRACT(ISODOW FROM d) IN (6, 7)) AS es_fin_semana
-FROM generate_series('2025-01-01'::date, '2026-12-31'::date, '1 day'::interval) AS d;
+FROM generate_series('2025-01-01'::date, '2029-12-31'::date, '1 day'::interval) AS d;
 
 
 /* =========================================================

@@ -86,8 +86,14 @@ visuales, en el mismo orden y disposición que la hoja de farmacia:
 
 Guarda como `powerbi/Reservas_CineHub.pbix`.
 
-## 4. Ampliación opcional
+## 4. Siguiente hoja: KPI de cumplimiento
+
+Para la hoja de indicadores (velocímetro + meta, como pidió el
+ingeniero) sigue [GUIA_KPI_CUMPLIMIENTO.md](GUIA_KPI_CUMPLIMIENTO.md).
+
+## 5. Ampliación opcional
 
 Cuando tengas `fact_pronostico_reservas` cargado (ver sección 17 del
-documento del proyecto), añade una segunda hoja con el pronóstico, igual
-que contempla el plan original (`21.8. Página 8: pronóstico de reservas`).
+documento del proyecto), añade una hoja adicional con el pronóstico,
+igual que contempla el plan original (`21.8. Página 8: pronóstico de
+reservas`).
