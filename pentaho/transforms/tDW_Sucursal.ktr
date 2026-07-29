@@ -75,7 +75,9 @@
   s.nombre_oficial AS nombre_sucursal,
   z.nombre AS zona,
   s.ciudad,
-  s.direccion
+  s.direccion,
+  s.latitud,
+  s.longitud
 FROM gestion.sucursal s
 LEFT JOIN gestion.zona z ON z.codigo_zona = s.codigo_zona</sql>
     <limit>0</limit>
@@ -139,6 +141,16 @@ LEFT JOIN gestion.zona z ON z.codigo_zona = s.codigo_zona</sql>
       <value>
         <name>direccion</name>
         <rename>direccion</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>latitud</name>
+        <rename>latitud</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>longitud</name>
+        <rename>longitud</rename>
         <update>Y</update>
       </value>
       <value>
